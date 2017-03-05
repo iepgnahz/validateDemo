@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import '../style/index.less';
+import App from '../../component/App';
 
 ReactDom.render(
-    <h1>Hello,World!</h1>,
+    <App/>,
     document.getElementById('app')
 );

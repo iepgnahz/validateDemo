@@ -15,13 +15,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js?$/,
-        include: [
-          path.resolve(__dirname, 'client/src')
-        ],
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
         loader: "babel-loader",
-        options: {
-          presets: ['es2015', 'react']
+        query: {
+          presets: ['es2015','react']
         }
       },
       {
